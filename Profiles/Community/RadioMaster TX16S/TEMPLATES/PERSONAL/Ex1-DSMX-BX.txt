@@ -1,0 +1,10 @@
+Cassie Robinson's Helicopter
+Template.
+
+This will give you a traditional
+helicopter setup, with an
+EdgeTX twist.
+
+Requires a DSM2 or DSMX
+receiver & a BeastX
+flight controller.

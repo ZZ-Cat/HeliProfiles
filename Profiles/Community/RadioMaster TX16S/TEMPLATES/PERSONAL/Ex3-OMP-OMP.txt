@@ -1,0 +1,10 @@
+Cassie Robinson's Helicopter
+Template.
+
+This will give you a traditional
+helicopter setup, with an
+EdgeTX twist.
+
+Designed for the OMPHOBBY
+M1 & M2 helicopters. Also
+uses the OMP protocol.

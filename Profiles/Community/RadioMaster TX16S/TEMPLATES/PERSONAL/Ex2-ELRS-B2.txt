@@ -1,0 +1,10 @@
+Cassie Robinson's Helicopter
+Template.
+
+This will give you a traditional
+helicopter setup, with an
+EdgeTX twist.
+
+Requires an external ELRS Tx
+module, an ELRS Rx, & an MSH
+Brain2 flight controller.
