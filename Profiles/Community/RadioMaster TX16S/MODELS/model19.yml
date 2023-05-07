@@ -1,0 +1,644 @@
+semver: 2.8.0
+header:
+  name: MainRotorBrake
+  bitmap: ""
+  labels: IRL,Helicopters,ELRS,Brain2,Demos
+noGlobalFunctions: 0
+thrTrim: 0
+trimInc: 0
+displayTrims: 0
+ignoreSensorIds: 0
+disableThrottleWarning: 0
+enableCustomThrottleWarning: 0
+customThrottleWarningPosition: 0
+beepANACenter: 0
+extendedLimits: 1
+extendedTrims: 0
+throttleReversed: 0
+mixData:
+  - destCh: 0
+    srcRaw: I0
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Active
+  - destCh: 0
+    srcRaw: MAX
+    weight: 0
+    swtch: L2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Brakes
+  - destCh: 1
+    srcRaw: I1
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Active
+  - destCh: 1
+    srcRaw: MAX
+    weight: 0
+    swtch: L2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Brakes
+  - destCh: 2
+    srcRaw: I2
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Active
+  - destCh: 2
+    srcRaw: I4
+    weight: -100
+    swtch: L2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 18
+    speedDown: 80
+    carryTrim: 1
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: BrkSvc
+  - destCh: 2
+    srcRaw: I4
+    weight: -100
+    swtch: L5
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 80
+    carryTrim: 1
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: BrkEmy
+  - destCh: 3
+    srcRaw: I3
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Active
+  - destCh: 3
+    srcRaw: MAX
+    weight: 0
+    swtch: L2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Brakes
+  - destCh: 4
+    srcRaw: MAX
+    weight: 0
+    swtch: NONE
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: -100
+    name: ISO
+  - destCh: 5
+    srcRaw: MAX
+    weight: 0
+    swtch: SF2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: -50
+    name: Cut
+  - destCh: 5
+    srcRaw: MAX
+    weight: 0
+    swtch: SF2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: -50
+    name: Cut
+  - destCh: 9
+    srcRaw: Rud
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 2
+      value: 3
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Yaw
+  - destCh: 9
+    srcRaw: Ele
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 2
+      value: 3
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Pitch
+  - destCh: 9
+    srcRaw: Thr
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 2
+      value: 3
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Coll
+  - destCh: 9
+    srcRaw: Ail
+    weight: 100
+    swtch: NONE
+    curve:
+      type: 2
+      value: 3
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Roll
+  - destCh: 9
+    srcRaw: ch(2)
+    weight: 100
+    swtch: L2
+    curve:
+      type: 2
+      value: 3
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Brakes
+limitData:
+  0:
+    min: -201
+    max: 201
+    revert: 0
+    offset: 0
+    ppmCenter: 0
+    symetrical: 0
+    name: Roll
+    curve: 0
+  1:
+    min: -201
+    max: 201
+    revert: 0
+    offset: 0
+    ppmCenter: 0
+    symetrical: 0
+    name: Pitch
+    curve: 0
+  2:
+    min: -201
+    max: 201
+    revert: 0
+    offset: 0
+    ppmCenter: 0
+    symetrical: 0
+    name: Coll
+    curve: 0
+  3:
+    min: -201
+    max: 201
+    revert: 0
+    offset: 0
+    ppmCenter: 0
+    symetrical: 0
+    name: Yaw
+    curve: 0
+  4:
+    min: 23
+    max: -23
+    revert: 0
+    offset: 0
+    ppmCenter: 0
+    symetrical: 0
+    name: ELRS
+    curve: 0
+  5:
+    min: -201
+    max: 201
+    revert: 0
+    offset: 0
+    ppmCenter: 0
+    symetrical: 0
+    name: Motor
+    curve: 0
+  6:
+    min: -201
+    max: 201
+    revert: 0
+    offset: 0
+    ppmCenter: 0
+    symetrical: 0
+    name: Aux-2
+    curve: 0
+  7:
+    min: -201
+    max: 201
+    revert: 0
+    offset: 0
+    ppmCenter: 0
+    symetrical: 0
+    name: Aux-3
+    curve: 0
+  8:
+    min: -201
+    max: 201
+    revert: 0
+    offset: 0
+    ppmCenter: 0
+    symetrical: 0
+    name: Aux-4
+    curve: 0
+  9:
+    min: 1000
+    max: -1000
+    revert: 0
+    offset: 0
+    ppmCenter: 0
+    symetrical: 0
+    name: Check
+    curve: 0
+expoData:
+  - srcRaw: Ail
+    scale: 0
+    mode: 3
+    chn: 0
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 0
+      value: 0
+    carryTrim: 1
+    name: ""
+  - srcRaw: Ele
+    scale: 0
+    mode: 3
+    chn: 1
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 0
+      value: 0
+    carryTrim: 1
+    name: ""
+  - srcRaw: Thr
+    scale: 0
+    mode: 3
+    chn: 2
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 0
+      value: 0
+    carryTrim: 1
+    name: ""
+  - srcRaw: Rud
+    scale: 0
+    mode: 3
+    chn: 3
+    swtch: NONE
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 0
+      value: 0
+    carryTrim: 1
+    name: ""
+  - srcRaw: MAX
+    scale: 0
+    mode: 3
+    chn: 4
+    swtch: "!L2"
+    flightModes: 000000000
+    weight: 0
+    offset: 0
+    curve:
+      type: 1
+      value: 0
+    carryTrim: 0
+    name: Off
+  - srcRaw: MAX
+    scale: 0
+    mode: 3
+    chn: 4
+    swtch: L3
+    flightModes: 000000000
+    weight: 0
+    offset: 0
+    curve:
+      type: 1
+      value: 0
+    carryTrim: 0
+    name: Rel
+  - srcRaw: Thr
+    scale: 0
+    mode: 3
+    chn: 4
+    swtch: L4
+    flightModes: 000000000
+    weight: 100
+    offset: 0
+    curve:
+      type: 3
+      value: 1
+    carryTrim: 1
+    name: Svce
+  - srcRaw: MAX
+    scale: 0
+    mode: 3
+    chn: 4
+    swtch: L6
+    flightModes: 000000000
+    weight: 0
+    offset: 100
+    curve:
+      type: 1
+      value: 0
+    carryTrim: 0
+    name: EMGCY
+inputNames:
+  0:
+    val: Roll
+  1:
+    val: Pit
+  2:
+    val: Col
+  3:
+    val: Yaw
+  4:
+    val: Brk
+curves:
+  0:
+    type: 1
+    smooth: 1
+    points: 1
+    name: BRK
+points:
+  0:
+    val: 24
+  1:
+    val: 24
+  2:
+    val: 25
+  3:
+    val: 29
+  4:
+    val: 42
+  5:
+    val: 64
+  6:
+    val: 0
+  7:
+    val: 25
+  8:
+    val: 50
+  9:
+    val: 75
+logicalSw:
+  0:
+    func: FUNC_ANEG
+    def: ch(9),2
+    delay: 10
+    duration: 2
+    andsw: L2
+  1:
+    func: FUNC_STICKY
+    def: L8,!L1
+    delay: 0
+    duration: 0
+    andsw: NONE
+  2:
+    func: FUNC_AND
+    def: L2,SB0
+    delay: 0
+    duration: 0
+    andsw: NONE
+  3:
+    func: FUNC_AND
+    def: L2,SB1
+    delay: 0
+    duration: 0
+    andsw: NONE
+  4:
+    func: FUNC_AND
+    def: L2,SB2
+    delay: 0
+    duration: 0
+    andsw: NONE
+  5:
+    func: FUNC_STICKY
+    def: L5,L3
+    delay: 0
+    duration: 0
+    andsw: NONE
+  6:
+    func: FUNC_ANEG
+    def: ch(9),12
+    delay: 4
+    duration: 0
+    andsw: "!L2"
+  7:
+    func: FUNC_AND
+    def: L7,!SB0
+    delay: 0
+    duration: 0
+    andsw: NONE
+thrTraceSrc: Thr
+switchWarningState: AuBuCuDuEuFdGu
+thrTrimSw: 0
+potsWarnMode: WARN_OFF
+jitterFilter: OFF
+potsWarnEnabled: 0
+displayChecklist: 0
+telemetryProtocol: 0
+varioData:
+  source: none
+  centerSilent: 0
+  centerMax: 0
+  centerMin: 0
+  min: 0
+  max: 0
+rssiSource: none
+rfAlarms:
+  warning: 45
+  critical: 42
+disableTelemetryWarning: 0
+trainerData:
+  mode: OFF
+  channelsStart: 0
+  channelsCount: -8
+  frameLength: 0
+  delay: 0
+  pulsePol: 0
+screenData:
+  0:
+    LayoutId: Layout2P1
+    layoutData:
+      options:
+        0:
+          type: Bool
+          value:
+            boolValue: 1
+        1:
+          type: Bool
+          value:
+            boolValue: 1
+        2:
+          type: Bool
+          value:
+            boolValue: 1
+        3:
+          type: Bool
+          value:
+            boolValue: 1
+        4:
+          type: Bool
+          value:
+            boolValue: 0
+view: 0
+modelRegistrationID: ""
