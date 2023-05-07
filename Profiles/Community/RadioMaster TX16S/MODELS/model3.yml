@@ -15,6 +15,30 @@ beepANACenter: 0
 extendedLimits: 1
 extendedTrims: 0
 throttleReversed: 0
+flightModeData:
+  0:
+    trim:
+      0:
+        value: 0
+        mode: 31
+      1:
+        value: 0
+        mode: 31
+      2:
+        value: 0
+        mode: 31
+      3:
+        value: 0
+        mode: 31
+      4:
+        value: 0
+        mode: 31
+      5:
+        value: 0
+        mode: 31
+    name: ""
+    fadeIn: 0
+    fadeOut: 0
 mixData:
   - destCh: 0
     srcRaw: I0
@@ -486,7 +510,7 @@ expoData:
     curve:
       type: 3
       value: 1
-    carryTrim: 1
+    carryTrim: 0
     name: Svce
   - srcRaw: MAX
     scale: 0
@@ -641,4 +665,4 @@ screenData:
           value:
             boolValue: 0
 view: 0
-modelRegistrationID: ""
+modelRegistrationID: FuckRID
