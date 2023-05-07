@@ -196,7 +196,7 @@ mixData:
   - destCh: 4
     srcRaw: MAX
     weight: 0
-    swtch: NONE
+    swtch: SF0
     curve:
       type: 0
       value: 0
@@ -209,8 +209,8 @@ mixData:
     mixWarn: 0
     flightModes: 000000000
     offset: -100
-    name: ISO
-  - destCh: 5
+    name: On
+  - destCh: 4
     srcRaw: MAX
     weight: 0
     swtch: SF2
@@ -225,8 +225,59 @@ mixData:
     mltpx: REPL
     mixWarn: 0
     flightModes: 000000000
-    offset: -50
-    name: Cut
+    offset: -100
+    name: Off
+  - destCh: 5
+    srcRaw: MAX
+    weight: -20
+    swtch: SF0
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Excite
+  - destCh: 5
+    srcRaw: MAX
+    weight: 20
+    swtch: SF0
+    curve:
+      type: 0
+      value: 0
+    delayUp: 60
+    delayDown: 0
+    speedUp: 150
+    speedDown: 0
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Ramp
+  - destCh: 5
+    srcRaw: I5
+    weight: 100
+    swtch: SF0
+    curve:
+      type: 0
+      value: 0
+    delayUp: 150
+    delayDown: 0
+    speedUp: 160
+    speedDown: 40
+    carryTrim: 1
+    mltpx: ADD
+    mixWarn: 0
+    flightModes: 000000000
+    offset: 0
+    name: Run
   - destCh: 5
     srcRaw: MAX
     weight: 0
@@ -376,8 +427,8 @@ limitData:
     name: ELRS
     curve: 0
   5:
-    min: -201
-    max: 201
+    min: 0
+    max: 0
     revert: 0
     offset: 0
     ppmCenter: 0
@@ -525,6 +576,45 @@ expoData:
       value: 0
     carryTrim: 0
     name: EMGCY
+  - srcRaw: MAX
+    scale: 0
+    mode: 3
+    chn: 5
+    swtch: SD0
+    flightModes: 000000000
+    weight: 0
+    offset: 20
+    curve:
+      type: 0
+      value: 0
+    carryTrim: 0
+    name: RPM-1
+  - srcRaw: MAX
+    scale: 0
+    mode: 3
+    chn: 5
+    swtch: SD1
+    flightModes: 000000000
+    weight: 0
+    offset: 50
+    curve:
+      type: 0
+      value: 0
+    carryTrim: 0
+    name: RPM-2
+  - srcRaw: MAX
+    scale: 0
+    mode: 3
+    chn: 5
+    swtch: SD2
+    flightModes: 000000000
+    weight: 0
+    offset: 80
+    curve:
+      type: 0
+      value: 0
+    carryTrim: 0
+    name: RPM-3
 inputNames:
   0:
     val: Roll
@@ -536,6 +626,8 @@ inputNames:
     val: Yaw
   4:
     val: Brk
+  5:
+    val: MRPM
 curves:
   0:
     type: 1
