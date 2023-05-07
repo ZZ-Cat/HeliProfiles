@@ -9,7 +9,7 @@ trimInc: 0
 displayTrims: 0
 ignoreSensorIds: 0
 disableThrottleWarning: 0
-enableCustomThrottleWarning: 0
+enableCustomThrottleWarning: 1
 customThrottleWarningPosition: 0
 beepANACenter: 0
 extendedLimits: 1
