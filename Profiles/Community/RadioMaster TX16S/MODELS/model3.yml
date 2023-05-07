@@ -295,6 +295,23 @@ mixData:
     flightModes: 000000000
     offset: -50
     name: Cut
+  - destCh: 5
+    srcRaw: MAX
+    weight: 0
+    swtch: L2
+    curve:
+      type: 0
+      value: 0
+    delayUp: 0
+    delayDown: 0
+    speedUp: 0
+    speedDown: 0
+    carryTrim: 1
+    mltpx: REPL
+    mixWarn: 0
+    flightModes: 000000000
+    offset: -50
+    name: Brakes
   - destCh: 9
     srcRaw: Rud
     weight: 100
