@@ -49,3 +49,45 @@ So far, these profiles & templates are only compatible with the RadioMaster TX16
 I do plan on adding more compatible controllers to these profiles & templates. With that being said, I will need your help in testing everything & making sure it's working as intended. If you happen to spot a bug in my profiles (not with EdgeTX itself), consider opening an Issue.
 
 Generally speaking, if your controller runs EdgeTX, it is very likely that compatibility can be added to these profiles.
+
+## Contributing & Self-builds
+
+### For folks that want to "Roll your own"
+
+The `HeliProfiles.etx` source file that I use to create the templates & profiles for this repository can be found [here.](../Profiles/Main/Companion/Profiles/HeliProfiles.etx)
+
+#### Downloading from my GitHub Repository
+
+To obtain, do the following:
+
+1. Click the green `<> Code` button.
+2. Select `Download ZIP`
+3. Save the downloaded file to a convenient location.
+
+#### 7-Zip users
+
+1. Open the ZIP file in 7-Zip.
+2. Navigate to `..\HeliProfiles-Main-Trunk.zip\HeliProfiles-Main-Trunk\Profiles\Main\Companion\Profiles`
+3. Highlight `HeliProfiles.etx`.
+4. Click `Extract`.
+5. In the dialog box, set the file destination to the same directory that you store the rest of your EdgeTX Companion profiles. For me, I keep mine in `C:\%userprofile%\OneDrive\EdgeTX\Companion\Profiles`
+6. Click `OK`.
+
+#### Windows ZIP file manager
+
+1. Right click the ZIP file & select `Extract All...`
+2. The default destination directory will be the same as where the ZIP file is stored.
+3. Ensure `Show extracted contents when complete` is selected.
+4. Hit `OK`.
+5. Navigate to `..\HeliProfiles-Main-Trunk\Profiles\Main\Companion\Profiles`.
+6. Copy the `HeliProfiles.etx` file to the same directory where you store the rest of your EdgeTX Companion profiles. For me, I keep mine in `C:\%userprofile%\OneDrive\EdgeTX\Companion\Profiles`
+
+#### In EdgeTX Companion
+
+1. Do `ctrl+o` & navigate to your directory where you store your EdgeTX Companion profiles. For me, I keep mine in `C:\%userprofile%\OneDrive\EdgeTX\Companion\Profiles`
+2. Double-click `HeliProfiles.etx`
+3. By rights, EdgeTX Companion should load the source files for my Heli Profiles with impunity.
+
+### Contributing
+
+__COMING SOON!__
