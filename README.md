@@ -54,7 +54,7 @@ Generally speaking, if your controller runs EdgeTX, it is very likely that compa
 
 ### For folks that want to "Roll your own"
 
-The `HeliProfiles.etx` source file that I use to create the templates & profiles for this repository can be found [here.](../Profiles/Main/Companion/Profiles/)
+The `HeliProfiles.etx` source file that I use to create the templates & profiles for this repository can be found [here.](../Profiles/Main/Companion/Profiles)
 
 #### Downloading from my GitHub Repository
 
