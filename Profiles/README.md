@@ -17,6 +17,12 @@ Profiles
   │
   └──Main ◄ This is where my personal profiles are stored. I use these for my helicopters on a daily basis.
       │
+      │
+      ├──Companion
+      │   │
+      │   └──Profiles ◄ This is where the HeliProfiles.etx source file for this repository is stored.
+      │
+      │
       ├──<Radio Target> ◄ EG RadioMaster TX16S, RadioMaster Boxer etc.
       │   ├──IMAGES ◄ Helicopter profile pics are stored here.
       │   └──MODELS ◄ Profile configurations are stored here.
